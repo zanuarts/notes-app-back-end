@@ -44,7 +44,7 @@ const getAllNotesHandler = () => ({
 })
 
 const getNoteByIdHandler = (request, h) => {
-    const { id } = Request.params
+    const { id } = request.params
 
     const note = notes.filter((n) => n.id === id)[0]
 
